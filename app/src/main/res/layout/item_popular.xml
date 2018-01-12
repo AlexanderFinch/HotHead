@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_popular"
+    style="@style/PopularItem.Clickable"
+    android:layout_marginBottom="25dp"
+    android:background="@drawable/item_popular"
+    android:orientation="vertical"
+    android:translationZ="3dp">
+
+    <ImageView
+        android:id="@+id/popular_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center|left"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/firesauce" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popular_name"
+                style="@style/Headline.TextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Hot Sauce Name" />
+
+            <TextView
+                android:id="@+id/key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="key"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popular_company_name"
+            style="@style/Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_company_name" />
+
+        <include layout="@layout/widget_rating" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popular_comments"
+                style="@style/BlackText.Large"
+                android:paddingBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_comments" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GreyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:text="@string/text_dash" />
+            <TextView
+                android:id="@+id/popular_user_name"
+                style="@style/GreyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_user_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="90">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:clickable="true"
+            android:gravity="center|center_vertical"
+            android:onClick="addBookmark">
+
+            <TextView
+                style="@style/FlatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@android:drawable/star_off"
+                android:gravity="center"
+                android:text="Bookmark" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

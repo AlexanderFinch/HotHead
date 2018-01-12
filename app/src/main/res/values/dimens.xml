@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="Content_padding">10dp</dimen>
+
+    <dimen name="ActivityItem_padding_top">5dp</dimen>
+    <dimen name="ActivityItem_padding_bottom">40dp</dimen>
+    <dimen name="ActivityItem_padding_left">10dp</dimen>
+    <dimen name="ActivityItem_padding_right">10dp</dimen>
+    <dimen name="ActivityItem_margin_bottom">30dp</dimen>
+    <dimen name="ActivityItem_margin_top">30dp</dimen>
+
+    <dimen name="PagerTitleStrip_horizontal_padding">4dp</dimen>
+
+    <dimen name="HScrollView_margin_left">5dp</dimen>
+    <dimen name="HScrollView_margin_right">5dp</dimen>
+    <dimen name="HScrollView_margin_bottom">25dp</dimen>
+    <dimen name="HScrollView_padding_left">10dp</dimen>
+    <dimen name="HScrollView_padding_right">10dp</dimen>
+    <dimen name="HScrollView_padding_bottom">2dp</dimen>
+
+    <dimen name="HScrollItem_height">400dp</dimen>
+    <dimen name="HScrollItem_width">350dp</dimen>
+    <dimen name="HScrollItem_padding">15dp</dimen>
+    <dimen name="HScrollItem_horizontal_margin">5dp</dimen>
+
+    <dimen name="PopularItem_Content_padding">10dp</dimen>
+
+    <dimen name="TabBar_text_size">24sp</dimen>
+    <dimen name="widget_your_review_star">50dp</dimen>
+</resources>

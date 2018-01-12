@@ -1,0 +1,128 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/hothead/swiper.js"></script>
+    <script src="/hothead/itemFactory.js"></script>
+    <script src="/hothead/hothead.js"></script>
+    <link rel="stylesheet" type="text/css" href="/hothead/hothead.css"/>
+</head>
+<body>
+<div id="headerContainer">
+    <div id="header">
+        <div id="logo">
+        </div>
+        <div id="menu">
+            <a href="#menu">&#9776;</a>
+        </div>
+    </div>
+</div>
+<div id="navContainer">
+    <div id="nav">
+        <div>discover</div>
+        <div>track</div>
+        <div>find</div>
+    </div>
+</div>
+<div id="navContent">
+    <div class="tab">
+        <div id="tryBannerContainer" class="gradientOrange">
+            <div id="tryBanner" class="banner">
+                <div>Try Something New!
+                    <button id="tryButton" class="buttonGreen">Surprise me!</button>
+                </div>
+                <div id="tryBannerImage"></div>
+            </div>
+        </div>
+        <div class="activityItemContainer">
+            <div class="activityItem">
+                <div class="banner gradientBlue">Recommended Sauces</div>
+                <div class="hDivider"></div>
+                <div id="recommended"></div>
+                <div id="recommendedInd"></div>
+            </div>
+            <div class="activityItem">
+                <div class="banner gradientOrange">Popular Sauces</div>
+                <div class="hDivider"></div>
+                <div id="popular"></div>
+                <div id="popularInd"></div>
+            </div>
+            <div class="activityItem">
+                <div class="banner gradientGrey">Search by Heat Level</div>
+                <div class="hDivider"></div>
+                <div class="heatSearchItem">
+                    <div class="heatSearchItemIcon heatSearchBlue"><img
+                            src="/hothead/mipmap-mdpi/hotsauce_clear.png"/></div>
+                    <div class="heatSearchItemText">Flavor focused</div>
+                </div>
+                <div class="heatSearchItem">
+                    <div class="heatSearchItemIcon heatSearchOrange"><img
+                            src="/hothead/mipmap-mdpi/firesauce_clear_3.png"/></div>
+                    <div class="heatSearchItemText">Mildly spicy</div>
+                </div>
+                <div class="heatSearchItem">
+                    <div class="heatSearchItemIcon heatSearchRed"><img
+                            src="/hothead/mipmap-mdpi/firesauce_clear_2.png"/></div>
+                    <div class="heatSearchItemText">Burning heat</div>
+                </div>
+                <div class="heatSearchItem">
+                    <div class="heatSearchItemIcon heatSearchBrown"><img
+                            src="/hothead/mipmap-mdpi/firesauce_clear_1.png"/></div>
+                    <div class="heatSearchItemText">Fire breather</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <div id="profileBannerContainer">
+            <div id="profileBanner">
+                <div id="profileIcon">
+                    <img src="/hothead/mipmap-mdpi/hothead_grey.png"/>
+                    <span>Alex</span>
+                </div>
+                <div id="profileStats">
+                    <div class="profileStatLine">
+                        <div class="vDivider"></div>
+                        <div class="profileStatHdr">Total reviews:</div>
+                        <div class="profileStat">7</div>
+                    </div>
+                    <div class="profileStatLine">
+                        <div class="vDivider"></div>
+                        <div class="profileStatHdr">Bookmarks:</div>
+                        <div class="profileStat">7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activityItemContainer">
+            <div class="activityItem">
+                <div class="banner gradientGreen">Your Sauces</div>
+                <div class="hDivider"></div>
+                <div id="review"></div>
+            </div>
+            <div class="activityItem">
+                <div class="banner gradientYellow">Your Bookmarks</div>
+                <div class="hDivider"></div>
+                <div id="bookmark"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <div id="searchContainer">
+            <div id="searchBarContainer">
+                <input id="search" type="text" name="search" placeholder="Search for sauces">
+                <span></span>
+            </div>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+</div>
+<!--<div id="detailPopup">-->
+    <!--<div id="detailNavContainer">-->
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>

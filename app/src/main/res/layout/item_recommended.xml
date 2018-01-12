@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HScrollItem"
+    android:background="@drawable/background_hot_sauce1"
+    android:layout_marginBottom="35dp"
+    android:onClick="openDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recommended_item_name"
+            style="@style/Display1.TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_sauce_name" />
+
+        <TextView
+            android:id="@+id/recommended_item_company_name"
+            style="@style/Display1.TextGrey.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_company_name" />
+
+        <View
+            style="@style/Divider"
+            android:layout_height="0.8dp"
+            android:background="@color/colorWhite25" />
+
+        <TextView
+            android:id="@+id/recommended_item_message"
+            style="@style/Headline.TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="This is the best sauce" />
+
+        <TextView
+            android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recommended_button"
+        style="@style/ButtonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:onClick="openDetail"
+        android:text="Check it out!" />
+
+</FrameLayout>

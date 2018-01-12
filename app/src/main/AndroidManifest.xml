@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finch.hothead">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/hothead"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ProfileEditActivity"
+            android:label="Profile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetailActivity"
+            android:label="Details"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AddSauceActivity"
+            android:label="Add Sauce"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AllBookmarksActivity"
+            android:label="Bookmarks"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AllReviewsActivity"
+            android:label="Reviews"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

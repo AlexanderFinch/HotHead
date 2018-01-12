@@ -1,0 +1,796 @@
+/* set defaults for page*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+    box-sizing: border-box;
+    color: #000;
+    text-shadow: none;
+}
+
+body {
+	height: 100%;
+}
+
+body > div:first-child {
+	height: 100%;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+	background-color: #eee;
+}
+
+div {
+	position: relative;
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+/****************************************/
+/* navigation stuff */
+
+#headerContainer {
+	height: 50px;
+	width: 100%;
+	background-color: #eb1e25;
+	-webkit-box-shadow: 0 2px 10px #763a0a;
+    -moz-box-shadow: 0 2px 10px #763a0a;
+	box-shadow: 0 2px 10px #763a0a;
+	z-index: 3;
+	text-align: center;
+}
+
+#header {
+	height: 50px;
+	width: 100%;
+}
+
+#header div:first-child {
+	float: left;
+}
+
+#header div:last-child {
+	float: right;
+	width: 40px;
+}
+
+#logo {
+    background-image: url("mipmap-mdpi/hot_head_logo.png");
+    background-repeat: no-repeat;
+    margin:7px;
+    height: 100%;
+    width:150px;
+}
+
+#menu {
+    margin:2px;
+    height: 100%;
+    width:30px;
+}
+
+#menu a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+#navContainer {
+    width: 100%;
+	background-color: #ED7A1E;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px #763a0a;
+    -moz-box-shadow: 0 1px 2px #763a0a;
+	box-shadow: 0 1px 2px #763a0a;
+	z-index: 2;
+}
+
+#nav {
+	height: 40px;
+	width: 100%;
+	margin: 0px;
+	display: flex;
+}
+
+#nav div {
+	height: 75%;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px 23px 0;
+	box-sizing: border-box;
+    font-size: .88em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.navActive {
+	border-bottom: 3px solid rgba(0,0,0,.5);
+	color: black !important;
+}
+
+#navContent {
+	min-height: 70%;
+	display: flex;
+}
+
+/****************************************/
+/* Discover tab */
+#tryBannerContainer {
+    width: 100%;
+	-webkit-box-shadow: 0 1px 2px #555;
+    -moz-box-shadow: 0 1px 2px #555;
+	box-shadow: 0px 1px 2px #555;
+	text-align: center;
+}
+
+#tryBanner{
+	height: 80px;
+	z-index: 1;
+	padding: 0px;
+	display: flex;
+}
+
+#tryBanner > div:first-child {
+    float: left;
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#tryBannerImage {
+    background-image: url("mipmap-mdpi/hothead_clear.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    height: 100%;
+    width: 100px;
+    float: right;
+}
+
+#recommended {
+    width: auto;
+}
+
+.recommendedItem{
+	margin: 5px;
+	height: 350px;
+	width: 100%;
+	background-color: black;
+}
+
+.recommendedItem:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.25;
+    background-image: url("drawable/hot_sauce_remove.jpg");
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.recommendedTitle {
+        z-index: 1px
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: white;
+        font-size: 1.5em;
+        padding: 10px;
+}
+
+.recommendedContent {
+        z-index: 1px;
+        top: 10px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: white;
+        font-size: 1.3em;
+        padding: 10px;
+}
+
+#recommendedInd {
+    height: 25px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.recommendedIndActive {
+    background: rgba(235, 30, 37, .5);
+}
+
+.recommendedIndItem {
+    height: 15px;
+    width: 15px !important;
+    border: #eb1e25 solid 1px;
+    border-radius: 10px;
+    margin: 0px 2px 0px 2px;
+}
+
+.recommendedButtonContainer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    z-index: 2;
+}
+
+#popular {
+    width: auto;
+}
+
+.popularItem{
+	margin: 10px;
+	height: auto;
+	height: 350px;
+	overflow-y: hidden;
+    border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 5px #555;
+    -moz-box-shadow: 0px 0px 5px #555;
+	box-shadow: 0px 0px 5px #555;
+	padding: 5px;
+	display: block;
+}
+
+.popularImage {
+    width:100%;
+    height: 150px;
+    overflow-y: hidden;
+}
+
+.popularText {
+    width:100%;
+    text-align: left;
+}
+
+.popularTitle {
+    font-size: 1.5em;
+}
+
+.popularCompany {
+    font-size: 1em;
+    color: #333;
+}
+
+#popularInd {
+    height: 25px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.popularIndActive {
+    background: rgba(235, 30, 37, .5);
+}
+
+.popularIndItem {
+    height: 15px;
+    width: 15px !important;
+    border: #eb1e25 solid 1px;
+    border-radius: 10px;
+    margin: 0px 2px 0px 2px;
+}
+.heatSearchItem {
+    width: calc(100% - 10px);
+    margin: 5px;
+	-webkit-box-shadow: 0 1px 2px #555;
+    -moz-box-shadow: 0 1px 2px #555;
+	box-shadow: 0px 1px 2px #555;
+}
+
+.heatSearchItemIcon  {
+    width: 115px;
+    float: left;
+}
+
+.heatSearchItemText {
+    height: 25px;
+    width: 200px;
+    float: right;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 35px 0px 0px 0px;
+}
+
+/****************************************/
+/* Profile tab */
+#profileBannerContainer {
+	background-color: #333333;
+	-webkit-box-shadow: 0 1px 2px #555;
+    -moz-box-shadow: 0 1px 2px #555;
+	box-shadow: 0px 1px 2px #555;
+    width: 100%;
+    text-align: center;
+}
+
+#profileBanner {
+	height: 80px;
+	z-index: 1;
+	padding: 0px;
+	display: flex;
+}
+
+#profileBanner span {
+    color: white;
+}
+
+#profileIcon {
+    width: 100px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+#profileStats{
+    width: 100%;
+    height: 100%;
+}
+
+.profileStatHdr{
+    position: relative;
+    top: 15px;
+    color: white;
+    font-size: .8em;
+}
+
+.profileStat{
+    position: relative;
+    top: 12px;
+    color: white;
+    float: right;
+    font-size: .8em;
+    padding: 4px 10px 0px 0px;
+}
+
+.profileStatLine{
+    width: 100%;
+    height: calc(50% - 1px);
+    border-bottom: black solid 1px;
+}
+
+.review{
+    width: calc(100% - 10px);
+    margin: 5px;
+	-webkit-box-shadow: 0 1px 2px #555;
+    -moz-box-shadow: 0 1px 2px #555;
+	box-shadow: 0px 1px 2px #555;
+}
+
+.reviewItem {
+    margin: 10px;
+    height: auto;
+    overflow-y: hidden;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 5px #555;
+    -moz-box-shadow: 0px 0px 5px #555;
+    box-shadow: 0px 0px 5px #555;
+    padding: 5px;
+    display: block;
+}
+
+.reviewImage{
+    height: 120px;
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+
+.reviewTitle{
+    height: 120px;
+    width: 50%;
+    text-align: left;
+}
+
+.reviewTitle div{
+    width: 100%;
+}
+
+.reviewRating {
+    padding 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.reviewComments {
+    padding 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.bookmarkItem {
+    margin: 10px;
+    height: auto;
+    overflow-y: hidden;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 5px #555;
+    -moz-box-shadow: 0px 0px 5px #555;
+    box-shadow: 0px 0px 5px #555;
+    padding: 5px;
+    display: block;
+}
+
+/****************************************/
+/* Find tab */
+
+.ui-page-theme-a .ui-body-inherit {
+    width: 100%;
+}
+#search {
+    background-image: url("drawable/searchicon.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 40px 12px 40px;
+    z-index: 0;
+}
+
+#searchContainer{
+	min-height: 100px;
+	text-align: center;
+	width: 100%;
+    z-index: 0;
+}
+
+#searchBarContainer {
+	width: 100%;
+    z-index: 0;
+}
+
+.clear {
+    position:absolute;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    top:8px;
+    right: 0px;
+    background-image: url("drawable/btn_close_normal.png");
+}
+
+#searchResults {
+    width: 100%;
+}
+.searchItem {
+	width: 100%;
+    height: auto;
+	background-color: #fff;
+    overflow-y: hidden;
+    -webkit-box-shadow: 0px 0px 5px #555;
+    -moz-box-shadow: 0px 0px 5px #555;
+    box-shadow: 0px 0px 5px #555;
+    padding: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.searchImage{
+    height: 120px;
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+
+.searchTitle{
+    height: 120px;
+    width: 50%;
+    text-align: left;
+}
+
+.searchTitle div{
+    width: 100%;
+}
+
+.searchRating {
+    padding 5px;
+    width: 100%;
+    text-align: left;
+}
+
+/****************************************/
+/* detail popup */
+#detailPopup {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    z-index: 10;
+}
+
+#detailNavContainer {
+	height: 50px;
+	width: 100%;
+	background-color: #eb1e25;
+	-webkit-box-shadow: 0 2px 10px #763a0a;
+    -moz-box-shadow: 0 2px 10px #763a0a;
+	box-shadow: 0 2px 10px #763a0a;
+	z-index: 3;
+	text-align: center;
+}
+
+#detailNav {
+	height: 40px;
+	width: 100%;
+	margin: 0px;
+	display: flex;
+}
+
+/****************************************/
+/* generics */
+.clipImg100 {
+    position:relative;
+    top: -100px;
+    width: 100%;
+}
+
+.clipImg50 {
+    position:relative;
+    top: -40px;
+    width: 100%;
+}
+
+.imageCenter {
+    vertical-align: middle
+}
+
+.banner{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.tab {
+	width: 100%;
+	min-height: 70%;
+	-webkit-box-shadow: 0 0px 0px #555;
+    -moz-box-shadow: 0 0px 0px #555;
+	box-shadow: 0px 0px 0px #555;
+	text-align: center;
+	background-color: #eee;
+}
+
+.activityItemContainer{
+	width: 100%;
+	text-align: center;
+}
+
+.activityItem{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	min-height: 100px;
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	-webkit-box-shadow: 0 1px 2px #555;
+    -moz-box-shadow: 0 1px 2px #555;
+	box-shadow: 0px 1px 2px #555;
+}
+
+.gradientOrange{
+	background: #ED7A1E; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#ED7A1E, #F5C11D); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ED7A1E, #F5C11D); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ED7A1E, #F5C11D); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ED7A1E, #F5C11D); /* Standard syntax */
+}
+
+.gradientBlue{
+	background: #44B9E0; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#44B9E0, #bce7f5); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#44B9E0, #bce7f5); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#44B9E0, #bce7f5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#44B9E0, #bce7f5); /* Standard syntax */
+}
+
+.gradientGrey{
+	background: #777777; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#777777, #EEEEEE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#777777, #EEEEEE); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#777777, #EEEEEE); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#777777, #EEEEEE); /* Standard syntax */
+}
+
+.gradientGreen{
+	background: green; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(green, lightgreen); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(green, lightgreen); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(green, lightgreen); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(green, lightgreen); /* Standard syntax */
+}
+
+.gradientYellow{
+	background: gold; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(gold, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(gold, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(gold, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(gold, yellow); /* Standard syntax */
+}
+
+.heatSearchBlue{
+	background: #44B9E0; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#bce7f5, #44B9E0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#bce7f5, #44B9E0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#bce7f5, #44B9E0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#bce7f5, #44B9E0); /* Standard syntax */
+	border: #0692C0 2px solid;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+.heatSearchOrange{
+	background: #ED7A1E; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#FFB275, #ED7A1E); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FFB275, #ED7A1E); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FFB275, #ED7A1E); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FFB275, #ED7A1E); /* Standard syntax */
+    border: #BE5A0B 2px solid;
+    border-radius: 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+.heatSearchRed{
+	background: #ED7A1E; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#eb1e25, #ED7A1E); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#eb1e25, #ED7A1E); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#eb1e25, #ED7A1E); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#eb1e25, #ED7A1E); /* Standard syntax */
+	border: #BE0A0F 2px solid;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+.heatSearchBrown{
+	background: #BE5A0B; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(black, #BE5A0B); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(black, #BE5A0B); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(black, #BE5A0B); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(black, #BE5A0B); /* Standard syntax */
+	border: #333333 2px solid;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+.ui-page-theme-a .ui-btn{
+    width: auto;
+    margin: auto;
+    font-size: .7em;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: black;
+}
+
+.ui-page-theme-a .ui-btn.buttonGreen {
+    border-color: green;
+    background: lightgreen; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(lightgreen, green); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightgreen, green); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightgreen, green); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightgreen, green); /* Standard syntax */
+}
+
+.ui-page-theme-a .ui-btn.buttonBlue {
+    border-color: #44B9E0;
+    background: #bce7f5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#bce7f5, #44B9E0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#bce7f5, #44B9E0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#bce7f5, #44B9E0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#bce7f5, #44B9E0); /* Standard syntax */
+}
+
+.hDivider {
+    height:1px;
+    width:90%;
+    margin: 20px 10px 10px 10px;
+    background: #777777; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white, #777777, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, white, #777777, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, white, #777777, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, white, #777777, white); /* Standard syntax */
+}
+
+.vDivider {
+    height: 90%;
+    width: 1px;
+    margin: 2px 10px 2px 10px;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #777777, white, #777777); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #777777, white, #777777); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #777777, white, #777777); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #777777, white, #777777); /* Standard syntax */
+    float: left;
+}
+
+
+/*shapes for fun*/
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+
+@media only screen and (min-width: 800px){
+
+    #header, .activityItemContainer, #recommended, .activityItem, #searchContainer, #search,
+    .ui-page-theme-a .ui-body-inherit, #tryBanner, #profileBanner, #nav {
+        width: 800px;
+    }
+
+    #nav {
+	    display: inline-block;
+        border-left: solid 1px rgba(118,58,10,.2);
+        border-right: solid 1px rgba(118,58,10,.2);
+    }
+
+    #nav div {
+	    width: 32%;
+    }
+
+    #tryBanner {
+	    display: inline-block;
+    }
+
+    #tryBanner > div:first-child {
+    	width: 697px;
+    }
+
+    #profileBanner {
+        display: inline-block;
+    }
+
+    #profileStats{
+        width: 70%;
+    }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/widget_your_rating">
+
+    <ImageView
+        android:layout_width="@dimen/widget_your_review_star"
+        android:layout_height="@dimen/widget_your_review_star"
+        android:clickable="true"
+        android:onClick="setRating"
+        android:src="@android:drawable/btn_star_big_off"
+        android:id="@+id/widget_your_rating_1"/>
+
+    <ImageView
+        android:layout_width="@dimen/widget_your_review_star"
+        android:layout_height="@dimen/widget_your_review_star"
+        android:clickable="true"
+        android:onClick="setRating"
+        android:src="@android:drawable/btn_star_big_off"
+        android:id="@+id/widget_your_rating_2"/>
+
+    <ImageView
+        android:layout_width="@dimen/widget_your_review_star"
+        android:layout_height="@dimen/widget_your_review_star"
+        android:clickable="true"
+        android:onClick="setRating"
+        android:src="@android:drawable/btn_star_big_off"
+        android:id="@+id/widget_your_rating_3"/>
+
+    <ImageView
+        android:layout_width="@dimen/widget_your_review_star"
+        android:layout_height="@dimen/widget_your_review_star"
+        android:clickable="true"
+        android:onClick="setRating"
+        android:src="@android:drawable/btn_star_big_off"
+        android:id="@+id/widget_your_rating_4"/>
+
+    <ImageView
+        android:layout_width="@dimen/widget_your_review_star"
+        android:layout_height="@dimen/widget_your_review_star"
+        android:clickable="true"
+        android:onClick="setRating"
+        android:src="@android:drawable/btn_star_big_off"
+        android:id="@+id/widget_your_rating_5"/>
+
+</LinearLayout>

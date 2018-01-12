@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActivityItem">
+        <item name="android:layout_marginTop">@dimen/ActivityItem_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/ActivityItem_margin_bottom</item>
+        <item name="android:paddingBottom">@dimen/ActivityItem_padding_bottom</item>
+        <item name="android:translationZ">3dp</item>
+        <item name="android:background">@drawable/view_light</item>
+    </style>
+</resources>

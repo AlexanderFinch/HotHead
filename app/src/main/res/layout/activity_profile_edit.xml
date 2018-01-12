@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_your_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="changeAvatar"
+            android:src="@mipmap/hothead_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_screen_name" />
+
+        <EditText
+            android:id="@+id/screen_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_screen_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_email_address" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email_address"
+            android:inputType="textEmailAddress" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/first_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="50"-->
+        <!--android:hint="First name" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/last_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="50"-->
+        <!--android:hint="Last name" />-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register_button"
+                style="@style/ButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:onClick="registerUser"
+                android:text="@string/text_register_button_save" />
+
+            <Button
+                android:id="@+id/delete_button"
+                style="@style/ButtonRed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:onClick="deleteUser"
+                android:text="@string/text_delete_user" />
+
+            <!--<Button-->
+            <!--style="@style/ButtonRed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:onClick="deleteReviews"-->
+            <!--android:text="@string/text_delete_reviews" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="100dp" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/text_or_sign_up_with"-->
+    <!--android:textSize="22sp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_with_facebook_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--style="@style/ButtonGreen"-->
+    <!--android:text="@string/text_register_facebook_button" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_with_google_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="@string/text_register_google_button"-->
+    <!--style="@style/ButtonGreen"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--TODO Finish Sticky Footer -->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/sticky_footer"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/privacy_policy_link"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:text="@string/link_privacy_policy" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

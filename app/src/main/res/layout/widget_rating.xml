@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_rating_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/widget_rating"
+        style="@style/Headline.TextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/widget_rating_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/widget_rating_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/widget_rating_3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/widget_rating_4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/widget_rating_5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+        android:paddingRight="7dp"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <TextView
+        style="@style/Headline.TextGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:text="(" />
+
+    <TextView
+        android:id="@+id/widget_rating_count"
+        style="@style/Headline.TextGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:text="0" />
+
+    <TextView
+        style="@style/Headline.TextGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:text=")" />
+
+</LinearLayout>

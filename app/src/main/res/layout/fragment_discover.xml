@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.finch.hothead.view.RefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gradient_orange_yellow"
+            android:orientation="horizontal"
+            android:translationZ="3dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/Headline.TextBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:text="@string/text_try_something_new" />
+
+                <Button
+                    style="@style/ButtonGreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:onClick="openDetailRandom"
+                    android:text="@string/text_surprise_me" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/content_desc_hot_head_icon"
+                android:src="@mipmap/hothead_clear" />
+
+        </LinearLayout>
+
+        <!--<View style="@style/Divider" />-->
+        <FrameLayout
+            style="@style/ActivityItem.Card.NoMargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:translationZ="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Headline.TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_blue_ltblue"
+                    android:text="@string/text_recommended_sauces" />
+
+                <View style="@style/Divider" />
+
+                <com.finch.hothead.view.HScrollView
+                    android:id="@+id/recommended_view"
+                    style="@style/HScrollView">
+
+                    <LinearLayout
+                        android:id="@+id/recommended_layout_discover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/item_recommended_empty" />
+
+                    </LinearLayout>
+                </com.finch.hothead.view.HScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recommended_indicator"
+                style="@style/HScrollIndicator">
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/ActivityItem.Card.NoMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationZ="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Headline.TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_orange_yellow"
+                    android:text="@string/text_popular_sauces" />
+
+                <View style="@style/Divider" />
+
+                <com.finch.hothead.view.HScrollView
+                    android:id="@+id/popular_view"
+                    style="@style/HScrollView">
+
+                    <LinearLayout
+                        android:id="@+id/popular_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/item_review_empty" />
+
+                    </LinearLayout>
+                </com.finch.hothead.view.HScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popular_indicator"
+                style="@style/HScrollIndicator">
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/ActivityItem.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:translationZ="3dp">
+
+            <TextView
+                style="@style/Headline.TextBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_grey_ltgrey"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/text_search_by_heat_level" />
+
+            <View
+                style="@style/Divider"
+                android:layout_margin="3dp" />
+
+            <include layout="@layout/widget_heat_level" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.finch.hothead.view.RefreshScrollView>

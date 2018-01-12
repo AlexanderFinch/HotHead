@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReviewItem"
+    android:onClick="openDetail"
+    android:orientation="vertical"
+    android:translationZ="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/review_image"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|left"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/firesauce" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/review_name"
+                    style="@style/Headline.TextBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_no_data" />
+
+                <TextView
+                    android:id="@+id/key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="key"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/review_company_name"
+                style="@style/Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_company_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+
+        <include layout="@layout/widget_rating" />
+
+        <TextView
+            android:id="@+id/review_comments"
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_no_data" />
+    </LinearLayout>
+
+</LinearLayout>

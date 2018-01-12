@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/add_sauce_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_hot_sauce_name"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/add_sauce_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_hot_sauce_description"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/add_sauce_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_hot_sauce_company"
+                android:imeOptions="actionNext" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/prompt_hot_sauce_shu"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/add_sauce_shu"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:drawable/btn_dropdown" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_hot_sauce_hotness" />
+
+            <Spinner
+                android:id="@+id/add_sauce_hotness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <EditText
+                android:id="@+id/add_sauce_pepper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_hot_sauce_base_pepper"
+                android:imeOptions="actionDone" />
+
+            <Button
+                android:id="@+id/add_sauce_button"
+                style="@style/ButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="addSauce"
+                android:text="@string/text_add_review_sauce" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,286 @@
+{
+  "sauces": [
+    {
+      "SAUCE_KEY" : "1",
+      "NAME": "Tapatio Hot Sauce",
+      "DESCRIPTION" : "Salsa Picante Hot Sauce",
+      "COMPANY_KEY" : "Tapatio Foods, LLC.",
+      "SHU" : "",
+      "HOTNESS": "medium",
+      "PEPPER" : "Red",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "2",
+      "NAME": "Sriracha Hot Chili Sauce",
+      "DESCRIPTION" : "Sriracha Hot Chili Sauce",
+      "COMPANY_KEY" : "Huy Fong Foods, Inc.",
+      "SHU" : "",
+      "HOTNESS": "medium",
+      "PEPPER" : "Chili",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "3",
+      "NAME": "Hot Licks Serrano",
+      "DESCRIPTION" : "Hot Licks Serrano Extra Hot Sauce",
+      "COMPANY_KEY" : "Hot Licks",
+      "SHU" : "",
+      "HOTNESS": "medium",
+      "PEPPER" : "Serrano",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "4",
+      "NAME": "Lava",
+      "DESCRIPTION" : "Raspberry Scorpion Hot Sauce",
+      "COMPANY_KEY" : "Volcanic Peppers, LLC.",
+      "SHU" : "",
+      "HOTNESS": "xxxhot",
+      "PEPPER" : "Trinidad Scorpion, Habanero Peppers, Thai Dragon Peppers, Bhut Jolokia powder, Scorpion powder, 7-Pot Pepper powder",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "5",
+      "NAME": "Gringo Bandito Hot Sauce",
+      "DESCRIPTION" : "El Sabor, Mas Sabrosa. Super Hot",
+      "COMPANY_KEY" : "Hungry Punker, Inc.",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Scorpion Chili Peppers, Jolokia Chili Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "6",
+      "NAME": "Ghost Pepper Sauce",
+      "DESCRIPTION" : "Original Bhut Jolokia Pepper Sauce",
+      "COMPANY_KEY" : "",
+      "SHU" : "",
+      "HOTNESS": "xxxhot",
+      "PEPPER" : "Bhut Jolokia",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "7",
+      "NAME": "XXXtra Hot",
+      "DESCRIPTION" : "Original Habanero Pepper Sauce",
+      "COMPANY_KEY" : "",
+      "SHU" : "",
+      "HOTNESS": "xhot",
+      "PEPPER" : "Habanero",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "8",
+      "NAME": "Tabasco",
+      "DESCRIPTION" : "Tabasco Brand McIlhenny Co. Pepper Sauce. Made in the U.S.A. Avery Island, LA. Est. 1868",
+      "COMPANY_KEY" : "McIlhenny Company",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Red Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "9",
+      "NAME": "Reaper Sling Blade",
+      "DESCRIPTION" : "Reaper Sling Blade Hot Sauce",
+      "COMPANY_KEY" : "Cajon Fiery Foods Co.",
+      "SHU" : "",
+      "HOTNESS": "xxxhot",
+      "PEPPER" : "Carolina Reaper, Bhut Jolokia",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "10",
+      "NAME": "East Asia Teriyaki",
+      "DESCRIPTION" : "East Asia Teriyaki Hot Sauce, a Dat'l Do-it Brand Specialty",
+      "COMPANY_KEY" : "Dat'l Do-it Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Aged Red Cayenne",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "11",
+      "NAME": "B.V.I Blazes",
+      "DESCRIPTION" : "British Virgin Islands Blazes",
+      "COMPANY_KEY" : "Dat'l Do-it Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Aged Tabasco, Habanero Mash",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "12",
+      "NAME": "Pharaoh's Revenge",
+      "DESCRIPTION" : "Pharaoh's Revenge Hot Sauce",
+      "COMPANY_KEY" : "Dat'l Do-it Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Aged Red Cayenne",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "13",
+      "NAME": "Reaper of Sorrow",
+      "DESCRIPTION" : "Born to Hula All Natural Hot Sauce",
+      "COMPANY_KEY" : "Born to Hula LLC.",
+      "SHU" : "",
+      "HOTNESS": "xxxhot",
+      "PEPPER" : "Red Jalapeno Peppers, Carolina Reaper Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "14",
+      "NAME": "The Smokeboss",
+      "DESCRIPTION" : "In honor of Andy \"SMOKEBOSS\" Mensing's Awesome music & career, we proudly offer SMOKEBOSS hot sauce. Packed with Spice & flavor, this sauce incorporates the rich tastes of cayenne pepper, smoked chipotle, and paprika. Smokeboss is so Delicious, you;ll be screaming for an encore!",
+      "COMPANY_KEY" : "Awesome Hot Sauce, Semper Fry LLC.",
+      "SHU" : "",
+      "HOTNESS": "medium",
+      "PEPPER" : "Cayenne Peppers, Chipotle Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "15",
+      "NAME": "Scotch Bonnet",
+      "DESCRIPTION" : "Scotch Bonnet Hot Pepper Sauce.",
+      "COMPANY_KEY" : "GraceKennedy Limited",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Scotch Bonnet Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "16",
+      "NAME": "Melinda's XXXtra Hot",
+      "DESCRIPTION" : "Melinda's Original Habanero Pepper Sauce. All Natural. Gluten Free.",
+      "COMPANY_KEY" : "Figueroa Brothers, Inc.",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Red Habanero Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "17",
+      "NAME": "Ring of Fire Hot Sauce",
+      "DESCRIPTION" : "Original Ring of Fire Habanero Hot Sauce. \"So Hot, It'll Burn Ya Twice.\" \"ALL NATURAL\" Ring of Fire Original Hot Sauce is made from the finest ingredients, including the legendary Habanero Chile. We make it in small batches to capture the garden fresh taste and quality of a genuine homemade sauce. Enriched with savory flavors of the Old Southwest and balanced with the right amount of heat, makes Ring of Fire Hot Sauce the perfect compliment to any dish.",
+      "COMPANY_KEY" : "Mike and Diane's Gourmet Kitchen",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Habanero Peppers, Serrano Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "18",
+      "NAME": "Melinda's Ghost Pepper Sauce",
+      "DESCRIPTION" : "Melinda's Original Bhut Jolokia Pepper Sauce. All Natural. Gluten Free. XXXtra Hot",
+      "COMPANY_KEY" : "Figueroa Brothers, Inc.",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Red Habanero Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "19",
+      "NAME": "Zeus Juice Xtra Hot",
+      "DESCRIPTION" : "Tons of Freshly Pealed Garlic make Zeus Juice worthy of the God of Gods. This is a Spicy Garlic paste with Cayenne Pepper implemented as the driving force behind it.",
+      "COMPANY_KEY" : "Awesome Hot Sauce, Semper Fry LLC.",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Cayenne Peppers, Habanero Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "20",
+      "NAME": "Venom",
+      "DESCRIPTION" : "A SIX pepper medley makes this sauce a delicious gourmet force to be reckoned with. It's not a contact burn. You are given a moment to taste your food, taste the flavor of the sauce, then the heat builds... And builds... And... you get the point.",
+      "COMPANY_KEY" : "Awesome Hot Sauce, Semper Fry LLC.",
+      "SHU" : "",
+      "HOTNESS": "medium",
+      "PEPPER" : "Cayenne Peppers, Serrano Peppers, Habanero Peppers, Thai Chile Peppers, Butch Trinidad Scorpion Peppers, Smoked  Ghost Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "21",
+      "NAME": "The Eiffel Tower",
+      "DESCRIPTION" : "Cayenne Hot Sauce. \"a taste of Paris\"",
+      "COMPANY_KEY" : "Dat'l Do-it Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Aged Red Cayenne Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "22",
+      "NAME": "The Eiffel Tower",
+      "DESCRIPTION" : "Cayenne Hot Sauce. \"a taste of Paris\"",
+      "COMPANY_KEY" : "Dat'l Do-it Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Aged Red Cayenne Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "23",
+      "NAME": "357 Mad Dog Hot Sauce",
+      "DESCRIPTION" : "This Sauce Will Blow You Away! 750,000 Scoville. Made with 6 Million Scoville Pepper Extract",
+      "COMPANY_KEY" : "Ashley Food Co., Inc.",
+      "SHU" : "750000",
+      "HOTNESS": "xxxhot",
+      "PEPPER" : "Chili Extract, Habanero Peppers, 160,000 Scoville Cayenne Peppers",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "24",
+      "NAME": "La Victoria Salsa Brava Hot Sauce",
+      "DESCRIPTION" : "La Victoria Salsa Brava Hot Sauce",
+      "COMPANY_KEY" : "Megamex Foods, LLC.",
+      "SHU" : "",
+      "HOTNESS": "hot",
+      "PEPPER" : "Jalapeno Peppers, Red California Chiles",
+      "IMAGE" : ""
+    },
+    {
+      "SAUCE_KEY" : "25",
+      "NAME": "Gringo Bandito Hot Sauce",
+      "DESCRIPTION" : "El Sabor, Mas Sabrosa. Green Sauce",
+      "COMPANY_KEY" : "Hungry Punker, Inc.",
+      "SHU" : "",
+      "HOTNESS": "mild",
+      "PEPPER" : "Habanero Peppers, Serrano Peppers, More Peppers",
+      "IMAGE" : ""
+    }
+  ],
+  "banners": [
+    {
+      "SAUCE_KEY": "9",
+      "MESSAGE": "Try the hottest blade in the west!"
+    },
+    {
+      "SAUCE_KEY": "4",
+      "MESSAGE": "Deliciously fruity, surprisingly spicy!"
+    },
+    {
+      "SAUCE_KEY": "20",
+      "MESSAGE": "This hot sauce is NOT pepper spray, but it WILL kick you in the taste buds quite DELICIOUSLY!"
+    },
+    {
+      "SAUCE_KEY": "25",
+      "MESSAGE": "Adventurous flavor. Tingling tantalization. Make your next dining experience a zinger!"
+    }
+  ],
+  "reviews": [
+    {
+      "REVIEW_KEY": "1",
+      "SAUCE_KEY": "9",
+      "USER_KEY": "1",
+      "COMMENTS": "Try the hottest blade in the west!",
+      "RATING": "Try the hottest blade in the west!",
+      "DATE": "Try the hottest blade in the west!"
+    },
+    {
+      "SAUCE_KEY": "4",
+      "MESSAGE": "Deliciously fruity, surprisingly spicy!"
+    }
+  ]
+}

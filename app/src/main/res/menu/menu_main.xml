@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/action_menu_search"-->
+        <!--android:icon="@drawable/search_white_48"-->
+        <!--android:onClick="openSearch"-->
+        <!--android:orderInCategory="200"-->
+        <!--android:title="@string/action_menu_search"-->
+        <!--app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/action_menu_my_profile"
+        android:onClick="openProfile"
+        android:orderInCategory="100"
+        android:title="@string/action_menu_my_profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_menu_refresh"
+        android:onClick="refresh"
+        android:orderInCategory="200"
+        android:title="@string/action_menu_refresh"
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_menu_settings"-->
+        <!--android:onClick="openSettings"-->
+        <!--android:orderInCategory="300"-->
+        <!--android:title="@string/action_menu_settings"-->
+        <!--app:showAsAction="never" />-->
+    <!--<item-->
+        <!--android:id="@+id/action_menu_help"-->
+        <!--android:onClick="openHelp"-->
+        <!--android:orderInCategory="400"-->
+        <!--android:title="@string/action_menu_help"-->
+        <!--app:showAsAction="never" />-->
+
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Headline.TextBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_green_ltgreen"
+        android:text="Your Sauces" />
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/review_fragment_your_sauces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_review_empty"></include>
+
+    </LinearLayout>
+</LinearLayout>

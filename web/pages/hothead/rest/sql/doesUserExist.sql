@@ -1,0 +1,1 @@
+select count('a') > 0 as userExists from users where screen_name = ?;

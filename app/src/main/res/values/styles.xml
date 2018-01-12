@@ -1,0 +1,308 @@
+<resources>
+
+    <!-- Themes **********************************************************-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--default font stuff-->
+        <!--<item name="android:textColor">@color/colorWhite</item>-->
+        <!--<item name="android:editTextColor">@color/colorWhite</item>-->
+        <!--<item name="android:textColorHint">@color/colorWhite</item>-->
+        <item name="android:itemTextAppearance">@style/MenuTextColor</item>
+    </style>
+
+    <style name="TabBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="MenuTextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <!--Views **********************************************************-->
+    <style name="PagerTitleStrip">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">@dimen/PagerTitleStrip_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/PagerTitleStrip_horizontal_padding</item>
+    </style>
+
+    <style name="SearchBar">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:queryHint">Search for sauces</item>
+    </style>
+
+    <style name="HScrollView">
+        <item name="android:layout_marginRight">@dimen/HScrollView_margin_right</item>
+        <item name="android:layout_marginLeft">@dimen/HScrollView_margin_left</item>
+        <!--<item name="android:layout_marginBottom">@dimen/HScrollView_margin_bottom</item>-->
+        <item name="android:paddingRight">@dimen/HScrollView_padding_right</item>
+        <item name="android:paddingLeft">@dimen/HScrollView_padding_left</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="HScrollItem">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_height">@dimen/HScrollItem_height</item>
+        <item name="android:layout_width">@dimen/HScrollItem_width</item>
+        <!--&lt;!&ndash;<item name="android:padding">@dimen/HScrollItem_padding</item>&ndash;&gt;-->
+        <item name="android:layout_marginLeft">@dimen/HScrollItem_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/HScrollItem_horizontal_margin</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="VScrollBar">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <!--Element styles **********************************************************-->
+    <style name="Content">
+        <item name="android:background">@color/colorGreyLight</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ActivityItem">
+        <item name="android:layout_marginTop">@dimen/ActivityItem_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/ActivityItem_margin_bottom</item>
+        <item name="android:paddingBottom">@dimen/ActivityItem_padding_bottom</item>
+        <item name="android:background">@drawable/view_light</item>
+    </style>
+
+    <style name="ActivityItem.Card">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/view_light_card</item>
+    </style>
+
+    <style name="ActivityItem.Card.NoMargin">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="FloatingButton">
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:background">@drawable/button_selector_green</item>
+        <!--<item name="android:layout_marginBottom">20dp</item>-->
+        <!--<item name="android:layout_marginRight">20dp</item>-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ButtonGreen">
+        <item name="android:background">@drawable/button_selector_green</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="ButtonRed">
+        <item name="android:background">@drawable/button_selector_red</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="ButtonGrey">
+        <item name="android:background">@drawable/button_selector_grey</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ButtonBlue">
+        <item name="android:background">@drawable/button_selector_blue</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="HScrollIndicator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="HScrollItemIndicator">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:background">@drawable/item_indicator_open_primary</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="SearchItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:background">@drawable/item_review</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="ReviewItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:background">@drawable/item_review</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="BookmarkItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">175dp</item>
+        <item name="android:background">@drawable/item_review</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="PopularItem">
+        <item name="android:layout_width">325dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PopularItem.Clickable" parent="PopularItem">
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">openDetail</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="PopularItem.Content" parent="PopularItem.Clickable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_popular</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_weight">50</item>
+    </style>
+
+    <style name="Detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/view_light</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/gradient_clear_grey_clear</item>
+    </style>
+
+    <style name="Divider.Vert">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/gradient_clear_grey_clear_vert</item>
+    </style>
+
+    <style name="Divider.Small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/gradient_clear_grey_clear</item>
+    </style>
+
+    <!-- text styles **********************************************************-->
+    <style name="Display1" parent="Base.TextAppearance.AppCompat.Display1">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Display1.TextBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Display1.TextWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Display1.TextGrey">
+        <item name="android:textColor">@color/colorGreyMedLight</item>tem>
+    </style>
+
+    <style name="Display1.TextGrey.Small">
+        <item name="android:textSize">16dp</item>
+    </style>yle>
+
+    <style name="Headline" parent="Base.TextAppearance.AppCompat.Headline">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="Headline.TextBlack" parent="Headline">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Headline.TextWhite" parent="Headline">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Headline.TextGrey" parent="Headline">
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+    <style name="Subhead" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorGrey</item>
+
+    </style>
+
+    <style name="WhiteText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:shadowColor">@color/colorBlack50</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="BlackText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="BlackText.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="GreyText">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="FlatButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+</resources>
